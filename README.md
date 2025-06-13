@@ -33,7 +33,7 @@ The following models were implemented and evaluated:
 
 - ✅ **GRU-Transformer**: GRU-based sequential encoder with Transformer decoder  
 - ✅ **CNN-SFTransformer**: Convolutional layers feeding into Transformer blocks  
-- ✅ **Baseline Transformer** (pure self-attention on tabular data)
+- ✅ **LSTM** (State-of-the-art model for time-series forecasting)
 - 🔁 **Traditional Machine Learning Models**:
   - Support Vector Machine (SVM)
   - Logistic Regression
