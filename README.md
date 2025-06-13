@@ -1,5 +1,5 @@
-# credit-risk-transformers-machine-learning
-Code for the paper: Enhancing Credit Risk Assessment through Transformer-based Machine Learning Models
+# Credit-Risk-Transformers-Machine-Learning
+Code for the journal paper: Enhancing Credit Risk Assessment through Transformer-based Machine Learning Models
 
 # Enhancing Credit Risk Assessment through Transformer-Based Machine Learning Models
 
@@ -7,7 +7,7 @@ This repository contains the official codebase accompanying the research paper:
 
 > **Elekanyani Siphuma (2025)**  
 > *Enhancing Credit Risk Assessment through Transformer-Based Machine Learning Models*  
-> 📄 [Link to the publication](https://link.springer.com/chapter/10.1007/978-3-031-78255-8_8) (Insert DOI or journal link here)
+> 📄 [Link to the publication](https://link.springer.com/chapter/10.1007/978-3-031-78255-8_8) 
 
 
 ## 📊 Project Overview
@@ -37,6 +37,6 @@ Credit risk assessment is a critical task for financial institutions. This study
 Clone this repository and install the required packages:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/credit-risk-transformers.git
+git clone https://github.com/esiphuma/credit-risk-transformers.git
 cd credit-risk-transformers
 pip install -r requirements.txt
