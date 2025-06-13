@@ -7,7 +7,7 @@ This repository contains the official codebase accompanying the research paper:
 
 > **Elekanyani Siphuma (2025)**  
 > *Enhancing Credit Risk Assessment through Transformer-Based Machine Learning Models*  
-> 📄 [Link to the publication](https://your-publication-link.com) (Insert DOI or journal link here)
+> 📄 [Link to the publication](https://link.springer.com/chapter/10.1007/978-3-031-78255-8_8) (Insert DOI or journal link here)
 
 
 ## 📊 Project Overview
