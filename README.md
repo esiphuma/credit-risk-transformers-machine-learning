@@ -58,10 +58,7 @@ All models were trained and validated using consistent preprocessing and evaluat
 
 Each model was evaluated using:
 
-- Accuracy  
-- Precision, Recall, F1-Score  
 - ROC AUC  
-- PR AUC (Average Precision Score)  
 - Geometric Mean (G-Mean)  
 - Kolmogorov-Smirnov (KS) Statistic
 
