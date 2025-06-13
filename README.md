@@ -64,6 +64,28 @@ Each model was evaluated using:
 
 These metrics were chosen to address **class imbalance** in credit default prediction.
 
+## 📈 Evaluation Metrics
+
+Each model was evaluated using:
+
+- ROC AUC  
+- Geometric Mean (G-Mean)  
+- Kolmogorov-Smirnov (KS) Statistic
+
+These metrics were chosen to address **class imbalance** in credit default prediction.
+
+---
+
+## 📊 Results Summary
+
+This study demonstrates that Transformer-based architectures significantly improve credit risk prediction across all evaluated datasets. Key findings include:
+
+- Both **GRU-Transformer** and **CNN-SFTransformer** models consistently outperformed traditional machine learning models—such as Logistic Regression, Random Forest, and Support Vector Machines—as well as the deep learning baseline **LSTM**.
+- Evaluation metrics showed higher **ROC AUC**, **G-Mean**, and **Kolmogorov-Smirnov (KS) statistic** scores for Transformer models, indicating improved discrimination ability and better handling of class imbalance.
+- **McNemar’s test** confirmed that the observed performance improvements were statistically significant and unlikely due to random variation.
+- These results emphasize the advantage of Transformer-based models for delivering more accurate and robust credit risk assessments across diverse real-world financial datasets.
+
+
 
 ## 🛠️ Setup Instructions
 
