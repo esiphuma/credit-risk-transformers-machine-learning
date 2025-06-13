@@ -1,42 +1,85 @@
-# Credit-Risk-Transformers-Machine-Learning
-Code for the journal paper: Enhancing Credit Risk Assessment through Transformer-based Machine Learning Models
-
 # Enhancing Credit Risk Assessment through Transformer-Based Machine Learning Models
 
-This repository contains the official codebase accompanying the research paper:
+This repository accompanies the research paper:
 
 > **Elekanyani Siphuma (2025)**  
 > *Enhancing Credit Risk Assessment through Transformer-Based Machine Learning Models*  
-> 📄 [Link to the publication](https://link.springer.com/chapter/10.1007/978-3-031-78255-8_8) 
+> 📄 [Link to publication](https://link.springer.com/chapter/10.1007/978-3-031-78255-8_8)  
 
+
+---
 
 ## 📊 Project Overview
 
-Credit risk assessment is a critical task for financial institutions. This study explores the application of Transformer-based neural network models to improve credit default classification on tabular data. The approach incorporates:
+This project investigates how Transformer-based deep learning architectures can improve credit default prediction performance on structured (tabular) datasets. The study systematically compares transformer models against several traditional and deep learning baselines, using real-world financial datasets.
 
-- Multi-head self-attention to learn feature interactions
-- Robust evaluation metrics suitable for imbalanced datasets
-- Comparative analysis with traditional methods (included in the paper)
+---
 
-## 🧠 Model Summary
+## 📚 Datasets Used
 
-- Architecture: Custom Transformer blocks for tabular data
-- Layers:
-  - MultiHeadAttention with residual connections
-  - Feed-forward networks with LayerNormalization
-  - Final dense layers with sigmoid output
-- Training:
-  - Binary cross-entropy loss
-  - Early stopping based on validation loss
-- Evaluation:
-  - Accuracy, Precision, Recall, F1-score
-  - ROC AUC, PR AUC, KS statistic, Geometric Mean
+The study evaluates model performance on three publicly available datasets:
 
-## 🛠️ Installation
+- **Taiwan Credit Card Default Dataset** ([UCI Repository](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients))
+- **German Credit Data** ([UCI Repository](https://archive.ics.uci.edu/ml/datasets/statlog+(german+credit+data)))
+- **Australian Credit Approval Dataset** ([UCI Repository](https://archive.ics.uci.edu/ml/datasets/statlog+(australian+credit+approval)))
 
-Clone this repository and install the required packages:
+These datasets represent varying levels of class imbalance and feature complexity, enabling robust model evaluation.
+
+---
+
+## 🧠 Models Compared
+
+The following models were implemented and evaluated:
+
+- ✅ **GRU-Transformer**: GRU-based sequential encoder with Transformer decoder  
+- ✅ **CNN-SFTransformer**: Convolutional layers feeding into Transformer blocks  
+- ✅ **Baseline Transformer** (pure self-attention on tabular data)
+- 🔁 **Traditional Machine Learning Models**:
+  - Support Vector Machine (SVM)
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+
+All models were trained and validated using consistent preprocessing and evaluation metrics.
+
+---
+
+## 🏗️ Model Architecture Summary
+
+- 6 Transformer blocks with:
+  - Multi-Head Attention
+  - Residual connections and LayerNormalization
+- Dense layers with ReLU activation and dropout
+- Sigmoid activation for binary classification
+
+---
+
+## 📈 Evaluation Metrics
+
+Each model was evaluated using:
+
+- Accuracy  
+- Precision, Recall, F1-Score  
+- ROC AUC  
+- PR AUC (Average Precision Score)  
+- Geometric Mean (G-Mean)  
+- Kolmogorov-Smirnov (KS) Statistic
+
+These metrics were chosen to address **class imbalance** in credit default prediction.
+
+
+## 🛠️ Setup Instructions
+
+To clone this repository and run the project locally:
 
 ```bash
-git clone https://github.com/esiphuma/credit-risk-transformers.git
-cd credit-risk-transformers
+# Step 1: Clone the repo
+git clone https://github.com/esiphuma/credit-risk-transformers-machine-learning.git
+cd credit-risk-transformers-machine-learning
+
+# Step 2: Create and activate virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Step 3: Install required packages
 pip install -r requirements.txt
